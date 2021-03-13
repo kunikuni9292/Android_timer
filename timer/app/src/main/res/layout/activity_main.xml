@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:outlineAmbientShadowColor="#212325"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="00:00"
+        android:textColor="@color/teal_200"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Startbutton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/gray"
+        android:onClick="onClickStartBtn"
+        android:text="START"
+        app:layout_constraintBottom_toTopOf="@+id/PauseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ResetButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:enabled="false"
+        android:onClick="onClickResetBtn"
+        android:text="RESET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/PauseButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:enabled="false"
+        android:onClick="onClickPauseBtn"
+        android:text="PAUSE"
+        app:layout_constraintBottom_toTopOf="@+id/ResetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
